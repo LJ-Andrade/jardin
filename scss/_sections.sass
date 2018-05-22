@@ -1,0 +1,69 @@
+.full-section
+    height: 100vh
+@media (max-width: 1200px)
+    .full-section
+        height: 100%
+        
+.home-section
+    position: relative
+    .col-left
+        background: url('../images/home-image-left.jpg') no-repeat center center
+        background-size: cover
+        @include flex-center
+    .col-right
+        background: url('../images/home-image-right.jpg') no-repeat center center
+        background-size: cover
+        min-height: 500px
+        .text-bottom-left
+            position: absolute
+            left: 5%
+            bottom: 10%
+            width: 450px
+            max-width: 100%
+    .logo
+        padding: 50px
+        img
+            max-width: 100%
+ 
+.mantenimiento
+    position: relative
+    .col-left
+        background: url('../images/img1.jpg') no-repeat center center
+        background-size: cover
+    .col-right
+        background: #fff
+        position: relative
+        min-height: 500px
+        .text-bottom-left
+            position: absolute
+            left: 5%
+            bottom: 10%
+            width: 450px
+            max-width: 100%
+            p
+                margin-bottom: 15px
+                padding-right: 15px
+            h3
+                margin: 0
+                margin-bottom: 5px
+                img
+                    width: 30px
+                    margin-right: 10px
+
+@media (max-width: 1200px)
+    .mantenimiento 
+        .col-left
+            min-height: 450px
+        .col-right
+            .text-bottom-left
+                position: relative
+                bottom: auto
+                left: auto
+                margin-bottom: 15px
+
+.flex-desktop
+    display: flex
+
+@media (max-width: 991px)
+    .flex-desktop
+        display: block
